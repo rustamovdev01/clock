@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(27, 27, 27);
+    padding-top: 15%;
+}
+
+#clock {
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px groove rgb(255, 123, 0);
+    color: rgb(26, 230, 230);
+    background-color: rgb(8, 67, 155);
+    box-shadow: 10px 7px 18px 2px rgba(27, 201, 180, 0.77);
+    -webkit-box-shadow: 10px 7px 18px 2px rgba(27, 201, 180, 0.77);
+    -moz-box-shadow: 10px 7px 18px 2px rgba(27, 201, 180, 0.77);
+    text-shadow: 4px 4px 0px rgba(31, 97, 164, 0.44);
+    margin-left: 40%;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-left: 30%;
+    color: chartreuse;
+    text-shadow: 4px 4px 0px rgba(31, 97, 164, 0.44);
+    font-size: 50px;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes text {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        bottom: 200px;
+        font-size: 25px;
+        color: black;
+    }
+    100% {
+        margin-top: 200px;
+        font-size: 25px;
+        color: gold;
+    }
+}
+@keyframes move {
+    0% {
+        background: deepskyblue;
+    }
+    10% {
+        background: yellowgreen;
+        color: black;
+    }
+    20% {
+        background: springgreen;
+        color: black;
+    }
+    30% {
+        background: rgb(255, 123, 0);
+    }
+    40% {
+        background: mediumspringgreen;
+    }
+}
